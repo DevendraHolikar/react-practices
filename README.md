@@ -1,0 +1,1 @@
+1. Count component with functionality. 
