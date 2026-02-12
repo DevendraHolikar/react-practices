@@ -1,7 +1,6 @@
 import { useState } from "react";
 
 const Count = () => {
-
   console.log("count");
 
   const [count, setCount] = useState(0);
@@ -12,7 +11,7 @@ const Count = () => {
   };
   return (
     <div>
-      <button onClick={handleCount}>button {count}</button>
+        <button className="btn" onClick={handleCount}>button {count}</button>
     </div>
   );
 };
