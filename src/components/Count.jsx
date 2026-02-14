@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 const Count = () => {
-  console.log("count");
+  console.log("---Count Components---");
 
   const [count, setCount] = useState(0);
 
@@ -10,8 +10,9 @@ const Count = () => {
     console.log("onClick");
   };
   return (
-    <div>
-        <button className="btn" onClick={handleCount}>button {count}</button>
+    <div className="">
+        <button className="btn text-white px-2 py-3 bg-gray-700 cursor-pointer"  
+        onClick={handleCount}>button {count}</button>
     </div>
   );
 };
