@@ -2,7 +2,9 @@ import { useEffect, useState } from "react";
 
 const UseEffect = () => {
   const [count, setCount] = useState(0);
-  const [seconds, setSeconds] = useState(0);
+
+  const [timecount, setTimeCount] = useState(0);
+  const [isActive, setIsActive] = useState(true);
 
   console.log("---useEffect Components---");
 
@@ -11,18 +13,19 @@ const UseEffect = () => {
   }, [count]);
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      setSeconds((pre) => pre + 1);
-    }, 10000);
-    
-    console.log("Run UseEffect setInterval");
 
-    return () => {
-      clearInterval(interval);
-    };
+    if (isActive) {
+      const intervalId = setInterval(() => {
+        setTimeCount((pre) => pre + 1);
+      }, 1000);
 
+      console.log("Run UseEffect setInterval");
 
-  }, []);
+      return () => {
+        clearInterval(intervalId);
+      };
+    }
+  }, [isActive]);
 
   const handleCount = () => {
     setCount(count + 1);
@@ -31,13 +34,31 @@ const UseEffect = () => {
   return (
     <div>
       <h1 className="text-2xl py-4 text-white">UseEffect</h1>
-      <div className="text-white">{seconds}</div>
+      <div className="text-white">{timecount}</div>
       <button
         className="btn text-white px-2 py-3 bg-gray-700 cursor-pointer"
         onClick={handleCount}
       >
         button {count}
       </button>
+
+      { !isActive && <button
+        className="btn text-white px-2 py-3 bg-gray-700 cursor-pointer"
+        onClick={() => {
+          setIsActive(true);
+        }}
+      >
+        Start
+      </button>}
+
+      { isActive && <button
+        className="btn text-white px-2 py-3 bg-gray-700 cursor-pointer"
+        onClick={() => {
+          setIsActive(false);
+        }}
+      >
+        Stop
+      </button>}
     </div>
   );
 };
