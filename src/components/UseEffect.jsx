@@ -32,18 +32,13 @@ const UseEffect = () => {
   };
 
   return (
-    <div>
+    <div className="flex flex-col gap-2">
       <h1 className="text-2xl py-4 text-white">UseEffect</h1>
       <div className="text-white">{timecount}</div>
-      <button
-        className="btn text-white px-2 py-3 bg-gray-700 cursor-pointer"
-        onClick={handleCount}
-      >
-        button {count}
-      </button>
+      
 
       { !isActive && <button
-        className="btn text-white px-2 py-3 bg-gray-700 cursor-pointer"
+        className="btn w-fit text-white px-2 py-3 bg-gray-700 cursor-pointer"
         onClick={() => {
           setIsActive(true);
         }}
@@ -52,13 +47,20 @@ const UseEffect = () => {
       </button>}
 
       { isActive && <button
-        className="btn text-white px-2 py-3 bg-gray-700 cursor-pointer"
+        className="btn w-fit text-white px-2 py-3 bg-gray-700 cursor-pointer"
         onClick={() => {
           setIsActive(false);
         }}
       >
         Stop
       </button>}
+
+      <button
+        className="btn w-fit text-white px-2 py-3 bg-gray-700 cursor-pointer"
+        onClick={handleCount}
+      >
+        UseEffect count {count}
+      </button>
     </div>
   );
 };
