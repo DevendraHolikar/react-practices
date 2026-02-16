@@ -7,7 +7,7 @@ const Count = () => {
 
   const handleCount = () => {
     setCount(count + 1);
-    console.log("onClick");
+    console.log("onClick handleCount" ,count);
   };
   return (
     <div className="">

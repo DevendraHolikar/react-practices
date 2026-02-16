@@ -4,3 +4,4 @@
     - Base on count run UseEffect  
     - Base on setInterval run UseEffect
 4. useRef
+5. Memo
