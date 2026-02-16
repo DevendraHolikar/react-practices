@@ -37,7 +37,7 @@ const UseEffect = () => {
 
   return (
     <div className="flex flex-col gap-2">
-      <h1 className="text-2xl py-4 text-white">UseEffect</h1>
+      <h1 className="w-fit text-2xl py-2 text-white border-b-2 border-blue-500">UseEffect</h1>
       <div className="text-white">{timecount}</div>
 
       {!isActive && (

@@ -9,8 +9,8 @@ const Memo = () => {
 
   return (
     <div> 
-        <h1 className="text-2xl py-4 text-white">Memo</h1>
-        <span className="py-4 text-white">Components Render Count { renderCount.current++ }</span>
+        <h1 className="w-fit text-2xl py-2 text-white border-b-2 border-blue-500">Memo</h1>
+        <div className="py-4 text-white">Components Render Count { renderCount.current++ }</div>
     </div>
   )
 }

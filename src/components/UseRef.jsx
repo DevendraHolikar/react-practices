@@ -1,6 +1,9 @@
 import { useRef } from "react";
 
 const UseRef = () => {
+
+  console.log("---UseRef Components---");
+
   const name = useRef(null);
   const last_name = useRef(null);
 
@@ -11,9 +14,9 @@ const UseRef = () => {
 
   return (
     <div>
-      <h1 className="text-2xl py-4 text-white">UseRef</h1>
+      <h1 className="w-fit text-2xl py-2 text-white border-b-2 border-blue-500">UseRef</h1>
 
-      <form className="w-[80] flex flex-col gap-2" onSubmit={handleSubmit}>
+      <form className="my-4  w-[80] flex flex-col gap-2" onSubmit={handleSubmit}>
         <input
           ref={name}
           type="text"

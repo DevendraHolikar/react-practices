@@ -11,9 +11,9 @@ const Count = () => {
   };
   return (
     <div className="">
-      <h1 className="text-2xl py-4 text-white">useState Count</h1>
+      <h1 className="w-fit text-2xl py-2 text-white border-b-2 border-blue-500">useState Count</h1>
 
-        <button className="btn text-white px-2 py-3 bg-gray-700 cursor-pointer"  
+        <button className="my-4 btn text-white px-2 py-3 bg-gray-700 cursor-pointer"  
         onClick={handleCount}>useState Count {count}</button>
     </div>
   );
