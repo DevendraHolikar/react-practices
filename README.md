@@ -5,3 +5,5 @@
     - Base on setInterval run UseEffect
 4. useRef
 5. Memo
+6. UseMemo
+7. UseCallback

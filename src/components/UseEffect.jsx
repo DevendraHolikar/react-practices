@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import Memo from "./Memo";
 
 const UseEffect = () => {
   const [count, setCount] = useState(0);
@@ -68,7 +67,6 @@ const UseEffect = () => {
       >
         UseEffect count {count}
       </button>
-      <Memo></Memo>
     </div>
   );
 };

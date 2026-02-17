@@ -31,8 +31,7 @@ const UseMemo = () => {
       <ExpensiveComponent />
       <button
         onClick={() => setCount(count + 1)}
-       className="w-fit text-white px-2 py-3 bg-gray-700 cursor-pointer"
-      >
+       className="w-fit text-white px-2 py-3 bg-gray-700 cursor-pointer">
         Re-render Parent
       </button>
       <p  className="py-4">Parent re-renders: {count}</p>
