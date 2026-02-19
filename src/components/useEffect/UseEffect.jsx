@@ -2,8 +2,6 @@ import { useEffect, useState } from "react";
 
 const UseEffect = () => {
   const [count, setCount] = useState(0);
-  // const [title, setTitle] = useState(0);
-
   const [timecount, setTimeCount] = useState(0);
   const [isActive, setIsActive] = useState(false);
 
@@ -35,7 +33,7 @@ const UseEffect = () => {
   };
 
   return (
-    <div className="flex flex-col gap-2">
+    <div className="flex  gap-2  justify-center items-center flex-col w-[300px] border-2 border-blue-500 hover:border-purple-500 p-4">
       <h1 className="w-fit text-2xl py-2 text-white border-b-2 border-blue-500">UseEffect</h1>
       <div className="text-white">{timecount}</div>
 
@@ -65,7 +63,7 @@ const UseEffect = () => {
         className="btn w-fit text-white px-2 py-3 bg-gray-700 cursor-pointer"
         onClick={handleCount}
       >
-        UseEffect count {count}
+        UseEffect count + document title count {count}
       </button>
     </div>
   );

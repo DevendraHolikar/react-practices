@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const Count = () => {
+const UseState = () => {
   console.log("---Count Components---");
 
   const [count, setCount] = useState(0);
@@ -10,13 +10,13 @@ const Count = () => {
     console.log("onClick handleCount" ,count);
   };
   return (
-    <div className="">
+    <div className="flex justify-center items-center flex-col w-[300px] border-2 border-blue-500 hover:border-purple-500 p-4">
       <h1 className="w-fit text-2xl py-2 text-white border-b-2 border-blue-500">useState Count</h1>
 
-        <button className="my-4 btn text-white px-2 py-3 bg-gray-700 cursor-pointer"  
+        <button className="w-fit my-4 btn text-white px-2 py-3 bg-gray-700 cursor-pointer"  
         onClick={handleCount}>useState Count {count}</button>
     </div>
   );
 };
 
-export default Count;
+export default UseState;
