@@ -44,7 +44,7 @@ const UseEffect = () => {
             setIsActive(true);
           }}
         >
-          Start
+          Start count
         </button>
       )}
 
@@ -55,7 +55,7 @@ const UseEffect = () => {
             setIsActive(false);
           }}
         >
-          Stop
+          Stop display
         </button>
       )}
 

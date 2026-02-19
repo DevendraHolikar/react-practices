@@ -1,8 +1,8 @@
-import UseState from "./useState/UseState"
-import UseEffect from "./useEffect/UseEffect"
-import UseRef from "./useRef/UseRef"
+import UseState from "./UseState/UseState"
+import UseEffect from "./UseEffect/UseEffect"
+import UseRef from "./UseRef/UseRef"
 import MemoParent from "./UseMemo/MemoParent"
-// import UseMemo from "./UseMemo/UseMemo"
+import UseMemo from "./UseMemo/UseMemo"
 import UseCallBack from "./UseCallback/UseCallBack"
 const Body = () => {
   return (
@@ -11,6 +11,7 @@ const Body = () => {
         <UseEffect></UseEffect>
         <UseRef></UseRef>
         <MemoParent></MemoParent>
+        <UseMemo></UseMemo>
         <UseCallBack></UseCallBack>
     </div>
   )

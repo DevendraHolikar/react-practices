@@ -20,13 +20,13 @@ const UseCallBack = () => {
         className="my-4 btn text-white px-2 py-3 bg-gray-700 cursor-pointer"
         onClick={() => setCount(count + 1)}
       >
-        UseCallBack Count {count}
+        Parent UseCallBack Count {count}
       </button>
 
       <button
         className="my-4 ml-4 btn text-white px-2 py-3 bg-gray-700 cursor-pointer"
         onClick={() => setChildCount(childCount + 1)}>
-       child UseCallBack Count {childCount}
+       Child UseCallBack Count {childCount}
       </button>
 
       <UseCallBackChild handle={childRun} childCount={childCount}></UseCallBackChild>

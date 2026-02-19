@@ -11,7 +11,7 @@ const UseCallBackChild = ({handle}) => {
         UseCallBack Child Component Render Count {renderCount.current++}
       </p>
       <button className="my-4 btn text-white px-2 py-3 bg-gray-700 cursor-pointer" 
-      onClick={handle}>UseCallBack Child Click</button>
+      onClick={handle}>Child UseCallBack Click</button>
     </div>
   );
 };
