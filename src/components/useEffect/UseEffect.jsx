@@ -55,7 +55,7 @@ const UseEffect = () => {
             setIsActive(false);
           }}
         >
-          Stop display
+          Stop count
         </button>
       )}
 

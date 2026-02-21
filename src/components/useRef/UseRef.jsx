@@ -27,7 +27,7 @@ const UseRef = () => {
       </h1>
 
       <form
-        className="my-4  w-[80] flex flex-col gap-2"
+        className="my-4  w-[80] flex flex-col gap-2  justify-center items-center"
         onSubmit={handleSubmit}
       >
         <input

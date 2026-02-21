@@ -4,6 +4,7 @@ import UseRef from "./UseRef/UseRef"
 import MemoParent from "./UseMemo/MemoParent"
 import UseMemo from "./UseMemo/UseMemo"
 import UseCallBack from "./UseCallback/UseCallBack"
+import Parent from "./ChildToParent/Parent"
 const Body = () => {
   return (
     <div className="w-[90%] m-auto py-6 flex flex-wrap gap-2">
@@ -13,6 +14,7 @@ const Body = () => {
         <MemoParent></MemoParent>
         <UseMemo></UseMemo>
         <UseCallBack></UseCallBack>
+        <Parent></Parent>
     </div>
   )
 }

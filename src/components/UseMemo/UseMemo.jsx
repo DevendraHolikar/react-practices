@@ -27,13 +27,13 @@ const UseMemo = () => {
 
       <button
         onClick={() => setCount(count + 1)}
-        className="w-fit text-white px-2 py-3 bg-gray-700 cursor-pointer"
+        className="w-fit my-4 btn text-white px-2 py-3 bg-gray-700 cursor-pointer"
       >
         Increment
       </button>
       <p className="py-4 text-white">Count: {count}</p>
       <input
-        className="text-white border-1 border-gray-400"
+        className="p-2 h-10 w-fit text-white border-2 border-gray-400"
         type="text"
         value={input}
         onChange={(e) => setInput(e.target.value)}
